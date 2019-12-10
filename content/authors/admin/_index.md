@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nelson Bighetti
+name: Alicia Zeng
 
 # Username (this should match the folder name)
 authors:
@@ -10,20 +10,20 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Student of Computational Neuroscience
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: ""
+- name: Physics of Living Matter Lab, University of Pennsylvania
+  url: "https://live-sas-physics.pantheon.sas.upenn.edu/living-matter/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+# bio: My research interests include neural computation, 
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Neural Computation
+- Nonlinear Dynamics
+- Learning Memory
 
 education:
   courses:
