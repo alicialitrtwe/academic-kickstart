@@ -23,14 +23,17 @@
   url = "#Publications"
   weight = 30
 
-
-
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 [[main]]
-   name = "CV"
-   url = "files/cv.pdf"
+   name = "Resume"
+   url = "static/files/cv.pdf"
    weight = 40
+
+[[main]]
+name = "Experience"
+url = "#Experience"
+weight = 50
 
 [[main]]
 name = "Contact"
