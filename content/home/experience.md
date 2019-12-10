@@ -31,8 +31,8 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "Berkeley Early Learning Lab"
-  company = "University X"
+  title = "Research Assistant"
+  company = "Berkeley Early Learning Lab"
   company_url = "https://www.babylab.berkeley.edu/people"
   location = "Berkeley"
   date_start = "2017-06-18"
