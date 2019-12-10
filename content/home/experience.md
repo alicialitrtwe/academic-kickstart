@@ -42,8 +42,8 @@ date_format = "Jan 2006"
   * Assisted in conducting experiments, receiving test subjects and families, and automating test subject recruiting processes"""
   
   [[experience]]
-  title = "Vanderbilt University, The Philosophy Honors Program"
-  company = "Honors Student"
+  title = "Honors Student"
+  company = "Vanderbilt University, The Philosophy Honors Program"
   company_url = ""
   location = "Nashville"
   date_start = "2017-08-25"
