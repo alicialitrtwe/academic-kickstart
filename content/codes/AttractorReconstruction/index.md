@@ -103,7 +103,7 @@ display(w)
 ```
 
 
-![png](AttractorReconstruction_files/AttractorReconstruction_7_0.png)
+![png](./AttractorReconstruction_files/AttractorReconstruction_7_0.png)
 
 
 ## 1. Select the appropriate time delay for state space reconstruction

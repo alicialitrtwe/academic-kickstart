@@ -31,7 +31,7 @@ links:
 #- name: Custom Link
 #url: http://example.org
 #url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_code: 'content/codes/AttractorReconstruction/index.md'
+url_code: 'codes'
 #url_dataset: '#'
 #url_poster: '#'
 #url_project: ''
