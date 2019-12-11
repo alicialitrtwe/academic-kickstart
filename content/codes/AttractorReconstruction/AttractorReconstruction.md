@@ -1,4 +1,4 @@
-This is a Jupyter Notebook I wrote in early 2018 when I first learnt about the nonlinear-time-series-analysis method of Attractor Reconstruction. Please refer to Henry Abarbanel's exceptional book [ ^1 ] for more details.
+This is a Jupyter Notebook I wrote in early 2018 when I first learnt about the nonlinear-time-series-analysis method of Attractor Reconstruction. Please refer to Henry Abarbanel's exceptional book [^1] for more details.
 
 
 ```python
@@ -81,11 +81,11 @@ display(w)
 
 ## 1. Select the appropriate time delay for state space reconstruction
 
-We use time lagged variables to form coordinates for the reconstructed phase space. Our goal is to identify a delayed measure which would give us as much new information about the evolution of the system as possible. Fraser proposes a good delay would be when the mutual information between $s(t)$ and $s(t+T)$ reaches its first local minimum [ ^2 ]
+We use time lagged variables to form coordinates for the reconstructed phase space. Our goal is to identify a delayed measure which would give us as much new information about the evolution of the system as possible. Fraser proposes a good delay would be when the mutual information between $s(t)$ and $s(t+T)$ reaches its first local minimum [^2]
 
 ### 1.1 Mutual information estimator
 
-So we need to build a mutual information estimator. There are numerous methods aimming at correcting the bias which would arises from naively pluging in frequency distributions of the samples as the underlying probabiliy distribution. Here I choose Kraskov's K-nearest-neighbor estimator as it has been shown to be stable and less affected by parameters especially for time series from nonlinear dynamical systems [ ^3 ].
+So we need to build a mutual information estimator. There are numerous methods aimming at correcting the bias which would arises from naively pluging in frequency distributions of the samples as the underlying probabiliy distribution. Here I choose Kraskov's K-nearest-neighbor estimator as it has been shown to be stable and less affected by parameters especially for time series from nonlinear dynamical systems [^3].
 
 Below is a simple plugin code and a code based on the second algorithm proposed by the Kraskov paper.
 
@@ -307,7 +307,7 @@ plot_3D(reconstru_lorenz_x_2[2])
 
 
 In a chaotic system any measurement stripe will eventually spread back to the invariant measure. To avoid this kind of spreading, as can be seen in the second graph, the first local minimum would be more preferable than the second minimum.  
-We determine the minimal dimension needed to fully unfold the attractor by counting the number of global false nearest neighbors [ ^4 ]:
+We determine the minimal dimension needed to fully unfold the attractor by counting the number of global false nearest neighbors [^4]:
 
 
 ```python
@@ -352,7 +352,7 @@ def fnn(data, reconstru, A = 2, threshold=15):
     return np.array(fnn_percentage).T
 ```
 
-Cao has proposed a revised algorithm that could more precisely determine the minimum embedding dimension [ ^ 5].
+Cao has proposed a revised algorithm that could more precisely determine the minimum embedding dimension [^5].
 
 
 ```python
@@ -450,12 +450,12 @@ It is clear from both algorithms that the minimum embedding dimension for the re
 
 References:
 
-[ ^1 ] Abarbanel, H. (2012). Analysis of observed chaotic data. Springer Science & Business Media.
+[^1]: Abarbanel, H. (2012). Analysis of observed chaotic data. Springer Science & Business Media.
 
-[ ^2 ] Fraser, A. M., & Swinney, H. L. (1986). Independent coordinates for strange attractors from mutual information. Physical review A, 33(2), 1134.
+[^2]: Fraser, A. M., & Swinney, H. L. (1986). Independent coordinates for strange attractors from mutual information. Physical review A, 33(2), 1134.
 
-[ ^3 ] Kraskov, Alexander, Harald Stögbauer, and Peter Grassberger. "Estimating mutual information." Physical review E 69.6 (2004): 066138.
+[^3]: Kraskov, Alexander, Harald Stögbauer, and Peter Grassberger. "Estimating mutual information." Physical review E 69.6 (2004): 066138.
 
-[ ^4 ] Kennel, Matthew B., Reggie Brown, and Henry DI Abarbanel. "Determining embedding dimension for phase-space reconstruction using a geometrical construction." Physical review A 45.6 (1992): 3403.
+[^4]: Kennel, Matthew B., Reggie Brown, and Henry DI Abarbanel. "Determining embedding dimension for phase-space reconstruction using a geometrical construction." Physical review A 45.6 (1992): 3403.
 
-[ ^5 ] Cao, Liangyue. "Practical method for determining the minimum embedding dimension of a scalar time series." Physica D: Nonlinear Phenomena 110.1-2 (1997): 43-50.
+[^5]: Cao, Liangyue. "Practical method for determining the minimum embedding dimension of a scalar time series." Physica D: Nonlinear Phenomena 110.1-2 (1997): 43-50.

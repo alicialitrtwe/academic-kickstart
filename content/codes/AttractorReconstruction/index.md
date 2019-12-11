@@ -25,7 +25,6 @@ image:
 #   Otherwise, set `projects = []`.
 projects: ["project1Songbirds"]
 ---
-
 This is a Jupyter Notebook I wrote in early 2018 when I first learnt about the nonlinear-time-series-analysis method of Attractor Reconstruction. Please refer to Henry Abarbanel's exceptional book [^1] for more details.
 
 
