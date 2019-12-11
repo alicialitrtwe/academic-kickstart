@@ -1,0 +1,18 @@
+# Theme metadata
+name = "Purple"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#3F2860" #Deep purple
+
+# Menu
+menu_primary = "#3F2860" # Deep purple
+menu_text = "#F6F6F5"
+menu_text_active = "#8E5A66" # A100
+menu_title = "#E5B25D"
+
+# Home sections
+home_section_odd = "#E0E0DF"
+home_section_even = "#F6F6F5"
